@@ -1,0 +1,373 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "SuperTracker3000",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "SetHRtarget"
+    },
+    {
+      "name": "StartActivity"
+    },
+    {
+      "name": "StopActivity"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ActivityType"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [
+    "number"
+  ],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Activities",
+      "mode": true,
+      "words": "walk,run,swim,bike ride,hike,workout,cycle,lift,sprint,jog,exercise",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "end tracking my run",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "start tracking my run",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "begin",
+      "intent": "StartActivity",
+      "entities": []
+    },
+    {
+      "text": "start",
+      "intent": "StartActivity",
+      "entities": []
+    },
+    {
+      "text": "begin tracking",
+      "intent": "StartActivity",
+      "entities": []
+    },
+    {
+      "text": "stop",
+      "intent": "StopActivity",
+      "entities": []
+    },
+    {
+      "text": "end",
+      "intent": "StopActivity",
+      "entities": []
+    },
+    {
+      "text": "i am starting",
+      "intent": "StartActivity",
+      "entities": []
+    },
+    {
+      "text": "i am finished",
+      "intent": "StopActivity",
+      "entities": []
+    },
+    {
+      "text": "i'm starting my run",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i finished my run",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i love running",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "set heart rate target",
+      "intent": "SetHRtarget",
+      "entities": []
+    },
+    {
+      "text": "track my heart rate",
+      "intent": "SetHRtarget",
+      "entities": []
+    },
+    {
+      "text": "keep track of my heart rate",
+      "intent": "SetHRtarget",
+      "entities": []
+    },
+    {
+      "text": "end my chess game",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want to start my run",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "ich bin fertig mit rennen",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "mein spaziergang ist zuende",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "just ended my walk",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "commence swimming",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "set hr to 130",
+      "intent": "SetHRtarget",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "set heart rate to 170",
+      "intent": "SetHRtarget",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "ok - heavy breathing - done",
+      "intent": "StopActivity",
+      "entities": []
+    },
+    {
+      "text": "start tracking a bike ride",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "start tracking a hike",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "all done",
+      "intent": "StopActivity",
+      "entities": []
+    },
+    {
+      "text": "done with my hike",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i am quite happy with my result. would you please wrap up the currently active activity tracker",
+      "intent": "StopActivity",
+      "entities": []
+    },
+    {
+      "text": "driving directions to home",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "walk start",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "order a drink",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start tracking a run",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "im running now",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "could you please follow my stroll",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "a large fries and coke please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "skydiving go",
+      "intent": "StartActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "end all",
+      "intent": "StopActivity",
+      "entities": []
+    },
+    {
+      "text": "i choose you pikachu",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "finished with that jog",
+      "intent": "StopActivity",
+      "entities": [
+        {
+          "entity": "ActivityType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    }
+  ]
+}

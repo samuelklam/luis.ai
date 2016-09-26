@@ -1,1 +1,25 @@
-end my chess game,StopActivity,chess gameI want to start my run,StartActivity,runIch bin fertig mit rennen,StopActivity,rennenMein Spaziergang ist zuende,StopActivity,Spaziergangjust ended my walk,StopActivity,walkfinished with that jog,StopActivity,jogcommence swimming,StartActivity,swimmingset hr to 130,SetHRtarget,130set heart rate to 170,SetHRtarget,170ok - heavy breathing - done,StopActivity, start tracking a bike ride,StartActivity,bike ridestart tracking a hike,StartActivity,hikeall done,StopActivity, done with my hike,StopActivity,hikeI am quite happy with my result. Would you please wrap up the currently active activity tracker,StopActivity, driving directions to home,None, walk start,StartActivity,walkorder a drink,None, start tracking a run,StartActivity,runim running now,StartActivity, could you please follow my stroll,StartActivity,strolla large fries and coke please,None, skydiving go,StartActivity,skydivingend all,StopActivity, I choose you pikachu,None, 
+end my chess game,StopActivity,chess game
+I want to start my run,StartActivity,run
+Ich bin fertig mit rennen,StopActivity,rennen
+Mein Spaziergang ist zuende,StopActivity,Spaziergang
+just ended my walk,StopActivity,walk
+finished with that jog,StopActivity,jog
+commence swimming,StartActivity,swimming
+set hr to 130,SetHRtarget,130
+set heart rate to 170,SetHRtarget,170
+ok - heavy breathing - done,StopActivity, 
+start tracking a bike ride,StartActivity,bike ride
+start tracking a hike,StartActivity,hike
+all done,StopActivity, 
+done with my hike,StopActivity,hike
+I am quite happy with my result. Would you please wrap up the currently active activity tracker,StopActivity, 
+driving directions to home,None, 
+walk start,StartActivity,walk
+order a drink,None, 
+start tracking a run,StartActivity,run
+im running now,StartActivity, 
+could you please follow my stroll,StartActivity,stroll
+a large fries and coke please,None, 
+skydiving go,StartActivity,skydiving
+end all,StopActivity, 
+I choose you pikachu,None, 

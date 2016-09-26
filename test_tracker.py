@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-This Script tests the LUIS.ai applications for CS108
+This Script tests the LUIS.ai applications
 """
 
 from __future__ import print_function
@@ -19,8 +19,6 @@ try:
 except ImportError:
 	from urllib.request import urlopen
 
-
-#COPY YOUR API LINK HERE!
 API_LINK = "https://api.projectoxford.ai/luis/v1/application?id=7ef18924-6aee-44d7-be98-1aa2a7428282&subscription-key=f5ff50ec30804649a7f1c52dc782c089"
 
 def url_converter(s):

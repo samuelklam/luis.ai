@@ -1,0 +1,574 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "SleepTracker",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "CurrentTime"
+    },
+    {
+      "name": "EndAlarm"
+    },
+    {
+      "name": "EndTracking"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "SetAlarm"
+    },
+    {
+      "name": "Snooze"
+    },
+    {
+      "name": "StartTracking"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ActionType"
+    },
+    {
+      "name": "Product"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [
+    "datetime"
+  ],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "create an alarm",
+      "intent": "SetAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want to get up at 8:30 am tomorrow",
+      "intent": "SetAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "set an alarm",
+      "intent": "SetAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "set alarm for tomorrow at 7 am",
+      "intent": "SetAlarm",
+      "entities": [
+        {
+          "entity": "Product",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "wake me up at 6 am tomorrow",
+      "intent": "SetAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "end my alarm",
+      "intent": "EndAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "end alarm",
+      "intent": "EndAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "silence alarm",
+      "intent": "EndAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "set alarm",
+      "intent": "SetAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "stop alarm",
+      "intent": "EndAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "quit alarm",
+      "intent": "EndAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Product",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "turn off alarm",
+      "intent": "EndAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 1
+        },
+        {
+          "entity": "Product",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm waking up now",
+      "intent": "EndAlarm",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "start tracking",
+      "intent": "StartTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "begin tracking",
+      "intent": "StartTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "keep track of my sleep",
+      "intent": "StartTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "commence tracking",
+      "intent": "StartTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want to track my sleep now",
+      "intent": "StartTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "stop tracking",
+      "intent": "EndTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "end tracking",
+      "intent": "EndTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "turn off tracking",
+      "intent": "EndTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 1
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm done with tracking",
+      "intent": "EndTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 3,
+          "endPos": 4
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what is the current time",
+      "intent": "CurrentTime",
+      "entities": []
+    },
+    {
+      "text": "current time",
+      "intent": "CurrentTime",
+      "entities": []
+    },
+    {
+      "text": "display current time",
+      "intent": "CurrentTime",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "read current time",
+      "intent": "CurrentTime",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "snooze for 20 minutes",
+      "intent": "Snooze",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "snooze for 1 hour 30 minutes",
+      "intent": "Snooze",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "snooze please",
+      "intent": "Snooze",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "snooze for a little",
+      "intent": "Snooze",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "good morning",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "good night",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello everyone",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i love sleep",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sleeping is good",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sleeping is fun",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can't wait to sleep tonight",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "pokemon go",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sweet dreams",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is happening",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "done tracking",
+      "intent": "EndTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "no more tracking",
+      "intent": "EndTracking",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "give me the time",
+      "intent": "CurrentTime",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "tell me the time",
+      "intent": "CurrentTime",
+      "entities": []
+    },
+    {
+      "text": "what's the time",
+      "intent": "CurrentTime",
+      "entities": []
+    },
+    {
+      "text": "the time now?",
+      "intent": "CurrentTime",
+      "entities": [
+        {
+          "entity": "ActionType",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,79 +1,46 @@
 # luis.ai
 
-## Part A - Building LUIS application
+Natural language "bot" interfaces for a Health Fitness Tracking Application (SuperTracker 3000) and a Sleep Tracking & Alarm Clock Application (SleepTracker) using [Luis.ai](https://www.luis.ai).
 
-Published End Point: https://api.projectoxford.ai/luis/v1/application?id=7ef18924-6aee-44d7-be98-1aa2a7428282&subscription-key=f5ff50ec30804649a7f1c52dc782c089.
+## SuperTracker 3000
 
-### Task 0:
+### Core Features
+- Start Tracking Activity
+- End Tracking Activity
+- Set Target Heart Rate
 
-#### Adding Test Utterances
+### Intents
+- SetHRtarget
+- StopActivity
+- StartActivity
+- None
 
-##### Start Activity
-- ```start tracking my run```
-- ```begin```
-- ```start```
-- ```begin tracking```
-- ```I am starting```
-- ```I'm starting my run```
+### Entities
+- ActivityType
+- Prebuilt: number
 
-##### Stop Activity
-- ```end tracking my run```
-- ```stop```
-- ```end```
-- ```I am finished```
-- ```I finished my run```
+### Phrase List Features
+- Activities: walk, run, swim, bike, ride, hike, workout, cycle, lift, sprint, jog, exercise
 
-##### None
-- ```direct me home```
-- ```lead me to a route```
-- ```I love running```
+## SleepTracker
 
-### Task 1
+### Core Features
+- track and analyze one's sleeping patterns / circadian rhythms
+- set an alarm for a specific time / time range
+- wake one up during their lightest sleeping phase
+- snooze (for a specific time)
+- when prompted, respond with the current time
 
-##### Recognize command to set a target heart rate
-- ```set heart rate target```
-- ```track my heart rate```
-- ```keep track of my heart rate```
+### Intents
+- SetAlarm
+- EndAlarm
+- StartTracking
+- EndTracking
+- CurrentTime
+- Snooze
+- None
 
-To run ```test_tracker.py```:
-```
-python test_tracker.py --basic
-```
-
-Output:
-```
-------- SUMMARY ------------------
-Total tested: 25
-Intent correct: 16 - 64.0%
-Entity correct: 5 - 20.0%
-
-Correct Examples:
-end all
-all done
-I am quite happy with my result. Would you please wrap up the currently active activity tracker
-ok - heavy breathing - done
-set heart rate to 170
-
-Examples with wrong intent:
-set hr to 130
-I choose you pikachu
-could you please follow my stroll
-driving directions to home
-im running now
-a large fries and coke please
-order a drink
-commence swimming
-skydiving go
-
-Examples with wrong entity:
-could you please follow my stroll
-finished with that jog
-commence swimming
-just ended my walk
-order a drink
-driving directions to home
-walk start
-done with my hike
-I want to start my run
-end my chess game
-```
+### Entities
+- ActivityType
+- Product
+- Prebuilt: datetime
