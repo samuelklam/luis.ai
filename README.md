@@ -27,7 +27,7 @@ Natural language "bot" interfaces for a Health Fitness Tracking Application (Sup
 ### Core Features
 - track and analyze one's sleeping patterns / circadian rhythms
 - set an alarm for a specific time / time range
-- wake one up during their lightest sleeping phase
+- wake one up during lightest sleeping phase
 - snooze (for a specific time)
 - when prompted, respond with the current time
 
